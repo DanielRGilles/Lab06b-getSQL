@@ -27,7 +27,7 @@ async function run() {
     await Promise.all(
       ediblePlants.map(ediblePlant => {
         return client.query(`
-                    INSERT INTO edible_plants (plantId, name, growZoneNumber, wateringInterval, imageUrl, edible, description, owner_id)
+                    INSERT INTO edible_plants (plantid, name, growzonenumber, wateringinterval, imageurl, edible, description, owner_id)
                     VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
                 `,
         [ediblePlant.plantId, ediblePlant.name, ediblePlant.growZoneNumber, ediblePlant.wateringInterval, ediblePlant.imageUrl, ediblePlant.edible, ediblePlant.description, user.id]);
