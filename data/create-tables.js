@@ -16,11 +16,16 @@ async function run() {
                     id SERIAL PRIMARY KEY,
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
-                );           
+                );
+                CREATE TABLE categories (
+                  id SERIAL PRIMARY KEY NOT NULL,
+                  category_name VARCHAR(256) NOT NULL
+                 );                   
                 CREATE TABLE edible_plants (
                     id SERIAL PRIMARY KEY NOT NULL,
                     plantId VARCHAR(512) NOT NULL,
                     name VARCHAR(512) NOT NULL,
+                    category INTEGER NOT NULL REFERENCES categories(id),
                     growZoneNumber INTEGER NOT NULL,
                     wateringInterval INTEGER NOT NULL,
                     imageUrl VARCHAR(512) NOT NULL,

@@ -2,6 +2,7 @@ module.exports = [
   {
     'plantId': 'malus-pumila',
     'name': 'Apple',
+    'category': 1,
     'growZoneNumber': 3,
     'wateringInterval': 30,
     'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/5/55/Apple_orchard_in_Tasmania.jpg',
@@ -11,6 +12,7 @@ module.exports = [
   {
     'plantId': 'beta-vulgaris',
     'name': 'Beet',
+    'category': 2,
     'growZoneNumber': 2,
     'wateringInterval': 7,
     'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/2/29/Beetroot_jm26647.jpg',
@@ -19,7 +21,8 @@ module.exports = [
   },
   {
     'plantId': 'coriandrum-sativum',
-    'name': 'Cilantro',
+    'name': 'cilantro',
+    'category': 3,
     'growZoneNumber': 2,
     'wateringInterval': 2,
     'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/5/51/A_scene_of_Coriander_leaves.JPG',
@@ -29,6 +32,7 @@ module.exports = [
   {
     'plantId': 'solanum-lycopersicum',
     'name': 'Tomato',
+    'category': 1,
     'growZoneNumber': 9,
     'wateringInterval': 4,
     'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/1/17/Cherry_tomatoes_red_and_green_2009_16x9.jpg',
@@ -38,6 +42,7 @@ module.exports = [
   {
     'plantId': 'persea-americana',
     'name': 'Avocado',
+    'category': 1,
     'growZoneNumber': 9,
     'wateringInterval': 3,
     'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Branch_and_fruit_of_the_Maluma_avocado_cultivar.jpg',
